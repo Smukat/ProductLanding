@@ -3,9 +3,6 @@
  */
 var selectedButtonSection1Id = 1;
 var selectedButtonSection2Id = 4;
-AOS.init({
-    duration: 1200
-});
 
 /*Update Navbar when scroll */
 /*It also updates the color of the <a> element in the collapsible menu*/
