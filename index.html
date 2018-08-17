@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<!-- INDEX
+        1.Header
+        2. Intro Article
+        3. Lightwear Article
+                a. Icon Section
+                b. Features Section-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Jesica Prades">
+    <meta name="description" content="Magic Leap, a product landing project for Free  Code Camp">
+    <meta name="keywords" content="magic, leap, product, landing, free, code, camp, fcc" >
+    <title>Magic Leap</title>
+
+    <!--------------------------------------------
+         EXTERNAL LINKS
+         --------------------------------------------->
+    <link rel="icon" type="image/x-icon" sizes="32x32" href="images/favicon.ico">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preload" href="https://magicleap.com/assets/fonts/lomino/lomino-regular-subset.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+<!--------------------------------------------
+  HEADER
+--------------------------------------------->
+<header class="header">
+    <nav class="nav" id="nav">
+        <img src="images/logo.png" alt="logo Magic Leap" class="nav__logo-img">
+        <button class="nav__button nav__button-color" id="nav-button" onclick="showCollapsibleNav()">Magic Leap One  <i class="fas fa-caret-down"></i></button>
+        <div class="display-none" id="collapsibleMenu">
+            <ul class="nav__ul">
+                <li class="nav__li"><a href="#lightwear" class="nav__li_a nav__li_a-white-color" onclick="showCollapsibleNav()">Lightwear</a></li>
+                <li class="nav__li"><a href="#lightpack" class="nav__li_a nav__li_a-white-color" onclick="showCollapsibleNav()">Lightpack</a></li>
+                <li class="nav__li"><a href="#mission-control" class="nav__li_a nav__li_a-white-color" onclick="showCollapsibleNav()">Mission Control</a></li>
+                <li class="nav__li"><a href="#specs" class="nav__li_a nav__li_a-white-color" onclick="showCollapsibleNav()">Specs</a></li>
+                <li class="nav__li"><a href="#buy" class="nav__li_a nav__li_a-white-color" onclick="showCollapsibleNav()">Buy</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="header__text">
+        <h1 class="header__title">Magic Leap One</h1>
+        <p class="header__subtitle">CREATOR EDITION</p>
+    </div>
+</header>
+
+<!--------------------------------------------
+  "INTRO" ARTICLE
+--------------------------------------------->
+<article class="intro">
+    <h2 class="subtitles">Lightfields and brain stuff</h2>
+    <p class="intro__p">Magic Leap One’s unique design and technology lets in natural light waves together with softly layered synthetic
+        lightfields. Both the real world and virtual light rays initiate neural signals that pass from the retina to the
+        visual part of the brain, creating unbelievably believable experiences.</p>
+    <p class="intro__p2">Built for humans, not robots (sorry robots), Magic Leap One is inspired by human physiology. It makes the unreal
+        feel real. And this is only the beginning.</p>
+</article>
+
+<!--------------------------------------------
+  LIGHTWEAR ARTICLE
+--------------------------------------------->
+<article class="lightwear" id="lightwear">
+    <img src="images/lightwear.png" alt="woman using magic leap" data-aos="fade-up" class="img-top-padding lightwear_woman-img">
+    <h2 class="subtitles">Mix your reality with Lightwear</h2>
+    <p class="lightwear__p">Far more than a headset, Lightwear is a portal into worlds within our world. Its cameras, sensors, speakers and
+        optical relay work together with the superpowered processor in the Lightpack to provide unique input to your
+        visual system for unparalleled experiences. Retinas are the canvas, light is the medium, Magic Leap One is the
+        brush.</p>
+
+    <!--Icon Section-->
+    <section class="icon-section">
+        <img src="images/icon-experience.png" alt="Knight riding a whale" class="icons">
+        <p class="icon-text">Discover how Create allows for <a href="https://www.magicleap.com/experiences/create" target="_blank">virtual 3D objects</a> to interact with the physical world.</p>
+    </section>
+</article>
+<!--Features Section-->
+<section class="lightwear__features-section">
+    <img src="images/lightwearOn.png" alt="Wearing the Lightwear" data-aos="zoom-in-up" class="features_img">
+    <div class="features__buttons">
+        <button class="lightwear__features_button" onclick="showCollapsibleFeatures(this, 1)" id="1">
+            <span class="features__button_span span-border">1</span> Computer Vision</button>
+        <p class="lightwear__features_p">The sensor suite on Magic Leap One Lightwear makes digital objects contextually aware.
+            So when you make digital penguins walk off the edge of the coffee table, they fall off the edge of the coffee
+            table, just like real penguins would (no penguins were harmed in the making of Magic Leap One).</p>
+        <button class="lightwear__features_button" onclick="showCollapsibleFeatures(this, 1)" id="2">
+            <span class="features__button_span">2</span> Spatial Audio</button>
+        <p class="lightwear__features_p display-none">Spatial Audio naturally blends virtual objects with the real world by relaying
+            distance and intensity with amazing accuracy and control. This means you won’t need to turn around to know
+            how quickly a T-Rex is gaining on you.</p>
+        <button class="lightwear__features_button" onclick="showCollapsibleFeatures(this, 1)" id="3">
+            <span class="features__button_span">3</span> Prescription Insert</button>
+        <p class="lightwear__features_p display-none">Magic Leap One can be equipped with a lens insert based on your
+            personalized prescription for eyeglasses. So even without your glasses, you’ll still be able to see crystal
+            clear experiences, crystal clearly.</p>
+    </div>
+</section>
+
+
+<!--------------------------------------------
+  LIGHTPACK ARTICLE
+--------------------------------------------->
+<article class="lightpack" id="lightpack">
+    <img src="images/lightpack.png" alt="woman using magic leap" data-aos="fade-up" class="img-top-padding lightpack__img">
+    <h2 class="subtitles">Superpowered Lightpack</h2>
+    <p class="lightpack__p">We’ve squeezed Magic Leap One’s awesome processing power into a small and portable Lightpack that clips right
+        onto your pocket. Inside this engine is an integrated GPU and CPU that generates high-fidelity, gaming-quality
+        graphics to create next-level experiences. And not being wired to a desktop means you can dodge the jellyfish
+        after you’ve made your kitchen into a coral reef.</p>
+
+    <!--Icon Section-->
+    <section class="icon-section">
+        <img src="images/icon2.png" alt="Air Balloon" class="icons">
+        <p class="icon-text">See how we use <a href="https://www.magicleap.com/experiences/tonandi" target="_blank">
+            spatial design and gestures</a> to bring Sigur Rós’ surrealist interactive musical dream Tónandi to life.</p>
+    </section>
+</article>
+
+<!--------------------------------------------
+  MISSION CONTROL ARTICLE
+--------------------------------------------->
+<article class="mission-control" id="mission-control">
+    <img src="images/control.png" alt="Magic Leap Control" data-aos="zoom-in" class="img-top-padding mission-control__img">
+    <h2 class="subtitles">Mission Control</h2>
+    <p class="mission-control__p">Wield unworldly power with Magic Leap One’s Control. An engineering marvel, it doesn’t require any additional
+        external sensors to deliver six degrees of freedom, also known as 6DoF. Use your Control as a paint brush, a
+        conductor’s baton or a weaponized ice cream cone that launches Rocky Road at 14 scoops per second.</p>
+    <!--Icon Section-->
+    <section class="icon-section">
+        <img src="images/icon3.png" alt="Mr Robot" class="icons">
+        <p class="icon-text">See how Weta Gameshop uses <a href="https://www.magicleap.com/experiences/invaders" target="_blank">plane recognition programming</a> to let rascally robots break
+            through the fourth wall straight into gamers’ living rooms.</p>
+    </section>
+</article>
+
+<!--------------------------------------------
+  SPECS ARTICLE
+--------------------------------------------->
+<article class="specs" id="specs">
+    <img src="images/world.png" alt="Magic Leap world" data-aos="fade-up" class="img-top-padding specs__img">
+    <h2 class="subtitles">Magic Leap One Specs</h2>
+    <button class="lightwear__features_button" onclick="showCollapsibleFeatures(this, 2)" id="4">
+        <span class="features__button_span span-border">*</span> Lightpack</button>
+    <div class="specs_lists">
+        <div class="cpu">
+            <h3 class="specs__h3">CPU</h3>
+            <p class="specs__p">NVIDIA® Parker SOC; 2 Denver 2.0 64-bit cores + 4 ARM Cortex A57 64-bit cores (2 A57’s and
+                1 Denver accessible to applications)</p>
+        </div>
+        <div class="gpu">
+            <h3 class="specs__h3">GPU</h3>
+            <p class="specs__p">NVIDIA Pascal™, 256 CUDA cores; Graphic APIs: OpenGL 4.5, Vulkan, OpenGL ES 3.3+</p>
+        </div>
+        <div class="ram">
+            <h3 class="specs__h3">RAM</h3>
+            <p class="specs__p">8GB</p>
+        </div>
+        <div class="storage">
+            <h3 class="specs__h3">Storage Capacity</h3>
+            <p class="specs__p">28 GB (actual available storage capacity 95GB)</p>
+        </div>
+        <div class="power">
+            <h3 class="specs__h3">Power</h3>
+            <p class="specs__p">Built-in rechargeable lithium-ion battery. Up to 3 hours continuous use. Battery life can
+                vary based on use cases. Power level will be sustained when connected to an AC outlet. 45-watt USB-C Power
+                Delivery (PD) charger</p>
+        </div>
+        <div class="connectivity">
+            <h3 class="specs__h3">Connectivity</h3>
+            <p class="specs__p">Bluetooth 4.2, WiFi 802.11ac/b/g/n, USB-C</p>
+        </div>
+    </div>
+
+    <button class="lightwear__features_button" onclick="showCollapsibleFeatures(this, 2)" id="5">
+        <span class="features__button_span">*</span> Lightwear</button>
+    <div class="specs_lists display-none">
+        <div class="input">
+            <h3 class="specs__h3">Audio Input</h3>
+            <p class="specs__p">Voice (speech to text) + real world audio (ambient)</p>
+        </div>
+        <div class="output">
+            <h3 class="specs__h3">Audio Output</h3>
+            <p class="specs__p">Onboard speakers and 3.5mm jack with audio spatialization processing</p>
+        </div>
+    </div>
+
+    <button class="lightwear__features_button" onclick="showCollapsibleFeatures(this, 2)" id="6">
+        <span class="features__button_span">*</span> Control</button>
+    <div class="specs_lists display-none">
+        <div class="haptics">
+            <h3 class="specs__h3">Haptics</h3>
+            <p class="specs__p">LRA Haptic Device</p>
+        </div>
+        <div class="tracking">
+            <h3 class="specs__h3">Tracking</h3>
+            <p class="specs__p">6DoF (position and orientation)</p>
+        </div>
+        <div class="trackpad">
+            <h3 class="specs__h3">Trackpad</h3>
+            <p class="specs__p">Touch sensitive</p>
+        </div>
+        <div class="leds">
+            <h3 class="specs__h3">LEDs</h3>
+            <p class="specs__p">12-LED (RGB) ring with diffuser</p>
+        </div>
+        <div class="power">
+            <h3 class="specs__h3">Power</h3>
+            <p class="specs__p">Built-in rechargeable lithium-ion battery. Up to 7.5 hours continuous use. 15-watt USB-C charger</p>
+        </div>
+        <div class="others">
+            <h3 class="specs__h3">Other inputs</h3>
+            <p class="specs__p">8-bit resolution Trigger Button; Digital Bumper Button; Digital Home Button</p>
+        </div>
+    </div>
+</article>
+
+    <!--Keep in touch Section-->
+    <section class="form">
+        <h3>Keep in touch</h3>
+        <form class="form">
+            <input type="email" id="email" name="email" placeholder="Email address *" required>
+            <input type="text" id="name" name="name" placeholder="What's your name?">
+            <button class="form_button">Join Us</button>
+        </form>
+    </section>
+</article>
+
+<!--------------------------------------------
+  FOOTER
+--------------------------------------------->
+<footer class="footer">
+    <p>&copy; Jesica Prades 2018</p>
+</footer>
+
+<!--------------------------------------------
+  SCRIPTS
+--------------------------------------------->
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> <!--AOS Animation Library-->
+<script>
+    AOS.init();
+</script>
+<script src="leap.js"></script>
+
+</body>
+
+</html>

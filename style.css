@@ -1,0 +1,467 @@
+/*--------------------------------------------------------------
+CSS Reset
+--------------------------------------------------------------*/
+html {
+    /*font-family: sans-serif;*/
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust:     100%;
+}
+body {
+    margin: 0;
+}
+img {
+    display: block;
+    border: 0;
+    width: 100%;
+    height: auto;
+}
+
+/*--------------------------------------------------------------
+Typography
+--------------------------------------------------------------*/
+body,
+button,
+input,
+select,
+textarea {
+    color: #404040;
+    font-family: "lomino", "open-sans", sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+}
+h1,
+h2,
+h3 {
+    margin: 0;
+    padding: 1em 0;
+    font-family: "lomino", "open-sans", sans-serif;
+}
+p {
+    font-family: "lomino", "open-sans", sans-serif;
+    color: #717171;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    font-weight: 300;
+    margin: 0.2em;
+    padding-bottom: 0.5em;
+}
+
+/*--------------------------------------------------------------
+General styles
+--------------------------------------------------------------*/
+.subtitles {
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: 700;
+    color: #4a4a4a;
+    text-align: center;
+    margin: 0.8em;
+    margin-bottom: 0;
+}
+
+.img-top-padding {
+    padding-top: 1em;
+}
+/*HEADER*/
+.header {
+    background: url("images/header_img.jpg") no-repeat center;
+    background-size: cover;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+.header__text {
+    padding-top: 24em;
+    text-align: center;
+}
+.header__title {
+    align-self: flex-end;
+    padding-bottom: 0;
+    color: #fff;
+}
+.header__subtitle {
+    color: #dedad6;
+    padding-top: 0.5em;
+}
+/*Navbar*/
+.nav {
+    padding-left: 0.8em;
+    padding-top: 0.8em;
+    padding-bottom: 0.5em;
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    z-index: 10000;
+}
+.nav-scroll {
+    background-color: #fff;
+}
+.nav-scroll__button {
+    color: #404040;
+}
+.nav__logo-img {
+    display: inline;
+    width: 32px;
+    height: 32px;
+    margin-right: 0.5em;
+    vertical-align: bottom;
+}
+.nav__button {
+    display: inline;
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+.nav__button-color {
+    color: #fff;
+}
+.fa-caret-down {
+    margin-left: 0.3em;
+}
+.display-none {
+    display: none;
+}
+.nav-collapsible__img {
+    width: 32px;
+    height: 32px;
+}
+.nav__li {
+    list-style-type: none;
+}
+.nav__li_a-white-color {
+    color: #fff;
+}
+.nav__li_a-dark-color {
+    color: #404040;
+}
+.nav__li_a {
+    text-decoration: none;
+    line-height: 3;
+}
+/*Icon section*/
+.icon-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0.5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+.icons {
+    width: 20%;
+    height: 20%;
+    max-width: 50px;
+    vertical-align: bottom;
+}
+.icon-text {
+    font-size: 12px;
+}
+
+.icon-text a {
+    color: #f12742;
+    text-decoration: none;
+}
+
+/*Lightwear Article*/
+.lightwear {
+    margin-top: 1.5em;
+}
+
+/*Lightwear (Features section)*/
+.lightwear__features-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.lightwear__features_button {
+    letter-spacing: 1px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 0.3em;
+}
+.features__button_span {
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    margin-right: 1em;
+    margin-bottom: 0.3em;
+}
+.span-border {
+    width: 32px;
+    height: 32px;
+    border: 6px solid #f12742;
+    background-color: #f12742;
+    border-radius: 50%;
+    box-shadow: 1px 1px 18px #d84e60;
+    color: #fff;
+}
+.lightwear__features_p {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+/*Specs Article */
+.specs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.specs_lists {
+    padding: 1em;
+    text-align: center;
+}
+.specs__h3 {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+/*Buy Article */
+.buy {
+
+}
+.leap {
+    display: flex;
+    flex-direction: column;
+}
+.leap a {
+    align-self: center;
+    margin-top: 2em;
+    margin-bottom: -6em;
+    z-index: 1000;
+    cursor: pointer;
+    color: #fff;
+    padding: 1em;
+    line-height: 1.2;
+    border: 1px solid #fff;
+}
+.form {
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+
+}
+label {
+    display: block;
+    margin: 1em;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="number"],
+textarea{
+    margin-top: 0.8em;
+    display: block;
+    width: 100%;
+}
+.form_button {
+    margin-top: 1em;
+    border: 1px solid #f12742;
+    color: #f12742;
+    padding: 0.5em;
+    line-height: 1.2;
+    outline: none;
+    background-color: transparent;
+    align-self: center;
+}
+
+/*--------------------------------------------------------------
+If no grid support, limit width to 50em and center align
+--------------------------------------------------------------*/
+@supports not (display: grid) {
+    .site {
+        max-width: 40em;
+        margin: 0 auto;
+    }
+}
+
+/*--------------------------------------------------------------
+CSS Grid layout for wider screens, when browser supports grid:
+--------------------------------------------------------------*/
+
+@media screen and (min-width: 34em) {
+    @supports (display: grid) {
+        .header {
+            background: url("images/bs-header_img.jpg") no-repeat center;
+        }
+        /*Intro Sectiom */
+        .intro {
+            background: url("images/intro-bg.jpg") no-repeat right;
+            background-size: 60%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto 1fr auto;
+            grid-template-areas:
+                    "header ."
+                    "main ."
+                    "side .";
+        }
+        .intro h2 {
+            grid-area: header;
+        }
+        .intro p {
+            text-align: left;
+            margin-left: 1em;
+        }
+        .intro__p {
+            grid-area: main;
+        }
+        .intro__p2 {
+            grid-area: side;
+        }
+
+        .lightwear {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto 1fr auto;
+            grid-template-areas:
+                    "side header"
+                    "side main"
+                    "side footer";
+        }
+        .lightwear_woman-img {
+            grid-area: side;
+        }
+        .lightwear h2 {
+            grid-area: header;
+        }
+        .lightwear__p {
+            grid-area: main;
+            text-align: left;
+        }
+        .lightwear .icon-section {
+            grid-area: footer;
+        }
+
+        /*Features Section */
+        .lightwear__features-section {
+            margin: 1em;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas:
+                    "main side";
+        }
+        .features__buttons {
+            grid-area: main;
+        }
+        .features_img {
+            grid-area: side;
+            width: 120%;
+            margin: 0 0 -30%;
+        }
+
+        /*Lightpack Article */
+        .lightpack {
+            margin: 1em;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto 1fr auto;
+            grid-template-areas:
+                    "side header"
+                    "side main"
+                    "side footer";
+        }
+        .lightpack__img {
+            grid-area: side;
+            width: 120%;
+            margin: 0 -30% 0;
+        }
+        .lightpack h2 {
+            grid-area: header;
+        }
+        .lightpack__p {
+            grid-area: main;
+            text-align: left;
+        }
+        .lightpack .icon-section {
+            grid-area: footer;
+        }
+
+        /*Mission-Control Article*/
+        .mission-control {
+            margin: 1em;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto auto;
+            grid-template-areas:
+                    "header side"
+                    "main side"
+                    "footer side";
+        }
+        .mission-control__img {
+            grid-area: side;
+            width: 120%;
+            margin: 0 0 30%;
+        }
+        .mission-control__p {
+            grid-area: main;
+            text-align: left;
+        }
+        .mission-control .icon-section {
+            grid-area: footer;
+        }
+
+        /*Specs Article */
+        .specs {
+            display: grid;
+            grid-template-columns: auto auto 1fr;
+            grid-template-rows: auto auto 1fr;
+            grid-template-areas:
+                    "side side header"
+                    "specs1 specs2 specs3"
+                    "main main main";
+        }
+        .specs__img {
+            grid-area: side;
+            margin-bottom: 2em;
+        }
+        .specs h2 {
+            grid-area: header;
+            align-self: center;
+        }
+        #4 {
+            grid-area: specs1;
+        }
+        #5 {
+            grid-area: specs2;
+        }
+        #6 {
+            grid-area: specs3;
+        }
+        .specs_lists {
+            grid-area: main;
+            /
+        }
+
+    }
+}
+
+/*Bigger Screens */
+@media screen and (min-width: 1024px) {
+    @supports (display: grid) {
+
+        .lightpack__img {
+            grid-area: side;
+            width: 90%;
+            margin: 0 -10% 0;
+        }
+        body {
+            width: 60%;
+            margin: auto;
+        }
+    }
+
+
+
+}
